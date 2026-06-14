@@ -5,19 +5,19 @@ import Team from "../Pages/User/Team";
 
 export const userRoutes = [
   {
-    path: "dashboard",
+    path: "user/dashboard",
     element: <Dashboard />
   },
   {
-    path: "report",
+    path: "user/report",
     element: <Report />
   },
   {
-    path: "projects",
+    path: "user/projects",
     element: <Projects />
   },
   {
-    path: "team",
+    path: "user/team",
     element: <Team />
   }
 ]

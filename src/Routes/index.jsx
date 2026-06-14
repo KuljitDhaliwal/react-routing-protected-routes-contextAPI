@@ -9,12 +9,19 @@ import { userRoutes } from './UserRoutes'
 import ProtectedRoutes from '../Components/ProtectedRoutes'
 import Home from '../Pages/Home'
 import NotFound from '../Pages/NotFound'
+import PublicRoutes from '../Components/PublicRoutes'
+import TermsConditions from '../Pages/TermsConditions'
+import PublicLayout from '../Layout/PublicLayout'
 
 function Index() {
   return (
     <div>
         <Routes>
-            <Route path='/' element={<Home/>}/>
+            {/* Public Routes */}
+            <Route element={<PublicLayout/>}>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/terms-conditions' element={<TermsConditions/>}/>
+            </Route>
             {/* Protected Route */}
             <Route element={<ProtectedRoutes/>}>
                 <Route element={<UserLayout/>}>

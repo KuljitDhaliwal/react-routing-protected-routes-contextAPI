@@ -6,22 +6,22 @@ import { BsFileEarmarkSpreadsheetFill } from "react-icons/bs";
 export const Routes = [
     {
         name: 'Dashboard',
-        route: '/dashboard',
+        route: '/user/dashboard',
         icon: IoHomeSharp
     },
     {
         name: 'Team',
-        route: '/team',
+        route: '/user/team',
         icon: FaUsers
     },
     {
         name: 'Projects',
-        route: '/projects',
+        route: '/user/projects',
         icon: IoFolderSharp
     },
     {
         name: 'Report',
-        route: '/report',
+        route: '/user/report',
         icon: BsFileEarmarkSpreadsheetFill
     },
 ]
