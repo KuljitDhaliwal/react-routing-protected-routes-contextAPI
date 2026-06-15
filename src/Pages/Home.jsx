@@ -32,7 +32,7 @@ function Home() {
                 <div className="rounded-full w-15 h-15 bg-cyan-800 grid place-items-center">
                     <IoMdLock className='text-3xl text-white' />
                 </div>
-                <p className='text-5xl text-white my-5'>
+                <p className='md:text-5xl text-3xl text-white my-5 text-center'>
                     Protected Route <span className='text-cyan-500'>Demo</span>
                 </p>
                 <p className='text-white text-center'>A simple react application demonstrating context API, Authentication and Protected Routes.</p>
@@ -55,13 +55,13 @@ function Home() {
 
             <div className='mt-10 max-w-200 m-auto'>
                 <p className='text-white text-center text-3xl'>Features</p>
-                <div className="grid grid-cols-2 gap-4 mt-4">
+                <div className="grid md:grid-cols-2 gap-4 mt-4">
                     <div className="card bg-cyan-200/80 rounded-2xl shadow-2xl p-5 flex gap-2 items-start">
                         <div className="rounded-full p-3 bg-cyan-500 align-top grid place-items-center">
                             <LuUsers />
                         </div>
                         <div>
-                            <p className='font-semibold text-xl'>Context API</p>
+                            <p className='font-semibold md:text-xl'>Context API</p>
                             <p>Manage user authentication state globally using Context API.</p>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ function Home() {
                             <IoShieldCheckmarkOutline />
                         </div>
                         <div>
-                            <p className='font-semibold text-xl'>Protected Routes</p>
+                            <p className='font-semibold md:text-xl'>Protected Routes</p>
                             <p>Restricted access to dashboard without authentication.</p>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ function Home() {
                             <SiReactrouter />
                         </div>
                         <div>
-                            <p className='font-semibold text-xl'>React Router</p>
+                            <p className='font-semibold md:text-xl'>React Router</p>
                             <p>Handle navigation and route protection with React Router v6.</p>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ function Home() {
                             <FaCss3 />
                         </div>
                         <div>
-                            <p className='font-semibold text-xl'>CSS Grid</p>
+                            <p className='font-semibold md:text-xl'>CSS Grid</p>
                             <p>Responsive layout build using modern CSS Grid.</p>
                         </div>
                     </div>
@@ -96,50 +96,50 @@ function Home() {
             </div>
             <div className='mt-18'>
                 <p className='text-white text-center text-3xl'>How it works</p>
-                <div className="flex justify-center mt-5 gap-10">
-                    <div>
+                <div className="flex md:flex-row flex-col justify-center mt-5 gap-10">
+                    <div className='m-auto grid place-items-center'>
                         <div className="p-3 rounded-xl border border-cyan-600 w-fit">
-                            <IoMdHome className='text-2xl text-white'/>
+                            <IoMdHome className='text-2xl text-white' />
                         </div>
                         <div className="flex max-w-30 gap-1 text-white mt-2">
                             <p>1.</p>
                             <p>User lands on Home page.</p>
                         </div>
                     </div>
-                    <FaArrowRightLong className='text-cyan-600 text-4xl'/>
-                    <div>
-                        <div className="p-3 rounded-xl border border-cyan-600 w-fit">
-                            <FaRegUser className='text-2xl text-white'/>
+                    <FaArrowRightLong className='text-cyan-600 text-4xl md:rotate-0 rotate-90 m-auto' />
+                    <div className='m-auto grid place-items-center'>
+                        <div className="p-3 rounded-xl border  border-cyan-600 w-fit">
+                            <FaRegUser className='text-2xl text-white' />
                         </div>
                         <div className="flex max-w-30 gap-1 text-white mt-2">
                             <p>2.</p>
                             <p>Clicks login button.</p>
                         </div>
                     </div>
-                    <FaArrowRightLong className='text-cyan-600 text-4xl'/>
-                    <div>
+                    <FaArrowRightLong className='text-cyan-600 text-4xl md:rotate-0 rotate-90 m-auto' />
+                    <div className='m-auto grid place-items-center'>
                         <div className="p-3 rounded-xl border border-cyan-600 w-fit">
-                            <IoIosCheckmarkCircle className='text-2xl text-green-400'/>
+                            <IoIosCheckmarkCircle className='text-2xl text-green-400' />
                         </div>
                         <div className="flex max-w-40 gap-1 text-white mt-2">
                             <p>3.</p>
                             <p>User data is stored in Context API.</p>
                         </div>
                     </div>
-                    <FaArrowRightLong className='text-cyan-600 text-4xl'/>
-                    <div>
+                    <FaArrowRightLong className='text-cyan-600 text-4xl md:rotate-0 rotate-90 m-auto' />
+                    <div className='m-auto grid place-items-center'>
                         <div className="p-3 rounded-xl border border-cyan-600 w-fit">
-                            <FaClipboardList className='text-2xl text-cyan-400'/>
+                            <FaClipboardList className='text-2xl text-cyan-400' />
                         </div>
                         <div className="flex max-w-40 gap-1 text-white mt-2">
                             <p>4.</p>
                             <p>User is allowed to visit dashboard.</p>
                         </div>
                     </div>
-                    <FaArrowRightLong className='text-cyan-600 text-4xl'/>
-                                        <div>
+                    <FaArrowRightLong className='text-cyan-600 text-4xl md:rotate-0 rotate-90 m-auto' />
+                    <div className='m-auto grid place-items-center'>
                         <div className="p-3 rounded-xl border border-cyan-600 w-fit">
-                            <IoLogOutSharp className='text-2xl text-red-400'/>
+                            <IoLogOutSharp className='text-2xl text-red-400' />
                         </div>
                         <div className="flex max-w-40 gap-1 text-white mt-2">
                             <p>5.</p>
